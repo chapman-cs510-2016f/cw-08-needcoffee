@@ -42,7 +42,7 @@ class JuliaPlane(cpnp.ComplexPlaneNP):
         self.ymax = ymax
         self.ylen = ylen
         self.c = -1.037 + 0.17j
-        self.f = np.vectorize(cpnp.julia(self.c)) #function must be vectorized to be applied to dataframe
+        self.f = julia(self.c) #function must be vectorized to be applied to dataframe
         
         self.refresh()
         
@@ -76,7 +76,7 @@ class JuliaPlane(cpnp.ComplexPlaneNP):
             print("Invalid argument; argument must be a complex number")
         else:
             self.c = complexNum
-            self.f = np.vectorize(cpnp.julia(complexNum))
+            self.f = julia(complexNum)
             self.refresh() #calls refresh to have function change take effect
 
     def show(self):
@@ -159,8 +159,8 @@ class JuliaPlane(cpnp.ComplexPlaneNP):
         self.plane = df
         
         
-@nb.vectorize([nb.int32(nb.complex128)])
 def julia(c, max=100):
+    @nb.vectorize([nb.int32(nb.complex128)])
     def f(z):
         n = 1
         mag = abs(z)
@@ -175,4 +175,3 @@ def julia(c, max=100):
                 n += 1
         return 0  #return 0 if max is reached before |z|>2
     return f
-    pass
