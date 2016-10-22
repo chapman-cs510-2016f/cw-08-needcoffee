@@ -1,8 +1,8 @@
 # CS510 CW 8
 
-**Author(s):** _\<your name(s)\>_
+**Author(s):** _Alexis Ford, Afnan Alqahtani_
 
-[![Build Status](https://travis-ci.org/chapman-cs510-2016f/cw-08-YOURNAME.svg?branch=master)](https://travis-ci.org/chapman-cs510-2016f/cw-08-YOURNAME)
+[![Build Status](https://travis-ci.org/chapman-cs510-2016f/cw-08-needcoffee.svg?branch=master)](https://travis-ci.org/chapman-cs510-2016f/cw-08-needcoffee)
 
 **Due date:** 2016/10/25
 
