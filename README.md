@@ -31,7 +31,7 @@ def julia(z):
 
 Analyze in this section what you found useful about this assignment in your own words. Include any lingering questions or comments that you may have.
 
-**CHANGEME**
+**Julia is a lot of fun to use. The noce syntax, made Python great, but the intuitive math tools (which are very obviously based on MatLab, and even R) make Julia a joy to use from a mathematical standpoint. And the best thing: LaTeX integration!**
 
 ## Honor Pledge
 
@@ -42,4 +42,4 @@ I pledge that all the work in this repository is my own with only the following 
 
 Signed,
 
-**YOURNAME**
+**Alexis Ford, Afnan Alqahtani**
